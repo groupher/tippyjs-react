@@ -101,7 +101,7 @@ const HeadlessTippy = () => (
 
 #### Headless animation
 
-- [`framer-motion`](https://codesandbox.io/s/festive-fire-hcr47)
+- [`@motion/react`](https://codesandbox.io/s/festive-fire-hcr47)
 - [`react-spring`](https://codesandbox.io/s/vigilant-northcutt-7w3yr)
 
 #### Headless arrow
@@ -167,7 +167,7 @@ element that the root popper (positioned) node wraps.
 
 For advanced cases you can access the root element via `instance.popper`.
 
-[Here's `moveTransition` with Framer Motion](https://codesandbox.io/s/tippyjs-react-framer-motion-j94mj).
+[Here's `moveTransition` with Motion](https://codesandbox.io/s/tippyjs-react-framer-motion-j94mj).
 
 ### Component children
 
