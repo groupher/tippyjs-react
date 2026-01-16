@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef, forwardRef} from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import {useSpring, animated} from 'react-spring';
-import {motion, useSpring as useFramerSpring} from '@motion/react';
+import {motion, useSpring as useFramerSpring} from 'motion/react';
 import {followCursor} from 'tippy.js';
 import Tippy, {useSingleton} from '../src';
 import TippyHeadless, {

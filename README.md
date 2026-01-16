@@ -101,7 +101,7 @@ const HeadlessTippy = () => (
 
 #### Headless animation
 
-- [`@motion/react`](https://codesandbox.io/s/festive-fire-hcr47)
+- [`motion`](https://codesandbox.io/s/festive-fire-hcr47)
 - [`react-spring`](https://codesandbox.io/s/vigilant-northcutt-7w3yr)
 
 #### Headless arrow
