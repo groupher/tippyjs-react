@@ -30,7 +30,7 @@
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>test/setup.js",
-      "@testing-library/jest-dom/extend-expect"
+      "@testing-library/jest-dom"
     ],
     "coveragePathIgnorePatterns": [
       "test/setup.js"
