@@ -1,6 +1,6 @@
 {
-  "name": "@tippyjs/react",
-  "version": "4.2.5",
+  "name": "@groupher/tooltip",
+  "version": "4.2.6",
   "description": "React component for Tippy.js",
   "main": "dist/tippy-react.umd.js",
   "module": "dist/tippy-react.esm.js",
@@ -96,10 +96,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atomiks/tippyjs-react.git"
+    "url": "git+https://github.com/groupher/tippyjs-react.git"
   },
   "bugs": {
-    "url": "https://github.com/atomiks/tippyjs-react/issues"
+    "url": "https://github.com/groupher/tippyjs-react/issues"
   },
-  "homepage": "https://github.com/atomiks/tippyjs-react#readme"
+  "homepage": "https://github.com/groupher/tippyjs-react#readme"
 }
