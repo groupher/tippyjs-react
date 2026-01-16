@@ -1,5 +1,23 @@
+import React from 'react';
+
 export const isBrowser =
   typeof window !== 'undefined' && typeof document !== 'undefined';
+
+const reactMajorVersion = React.version
+  ? parseInt(React.version.split('.')[0], 10)
+  : 0;
+
+export function getReactElementRef(element) {
+  if (!element) {
+    return null;
+  }
+
+  if (reactMajorVersion >= 19) {
+    return element.props?.ref ?? null;
+  }
+
+  return element.ref ?? element.props?.ref ?? null;
+}
 
 export function preserveRef(ref, node) {
   if (ref) {

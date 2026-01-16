@@ -2,6 +2,7 @@ import React, {cloneElement, useState} from 'react';
 import {createPortal} from 'react-dom';
 import {
   preserveRef,
+  getReactElementRef,
   ssrSafeCreateDiv,
   toDataAttributes,
   deepPreserveProps,
@@ -226,7 +227,7 @@ export default function TippyGenerator(tippy) {
           ? cloneElement(children, {
               ref(node) {
                 mutableBox.ref = node;
-                preserveRef(children.ref, node);
+                preserveRef(getReactElementRef(children), node);
               },
             })
           : null}
