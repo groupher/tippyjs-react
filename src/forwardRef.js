@@ -1,5 +1,5 @@
 import React, {cloneElement, forwardRef} from 'react';
-import {preserveRef} from './utils';
+import {getReactElementRef, preserveRef} from './utils';
 
 export default (Tippy, defaultProps) =>
   forwardRef(function TippyWrapper({children, ...props}, ref) {
@@ -11,7 +11,7 @@ export default (Tippy, defaultProps) =>
           ? cloneElement(children, {
               ref(node) {
                 preserveRef(ref, node);
-                preserveRef(children.ref, node);
+                preserveRef(getReactElementRef(children), node);
               },
             })
           : null}

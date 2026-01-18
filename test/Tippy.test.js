@@ -1,10 +1,6 @@
 import React, {useRef, useState} from 'react';
 import TippyBase from '../src';
-import {
-  render,
-  screen,
-  waitForElementToBeRemoved,
-} from '@testing-library/react';
+import {render, screen, waitFor} from '@testing-library/react';
 
 jest.useFakeTimers();
 
@@ -75,7 +71,12 @@ describe('<Tippy />', () => {
 
     // close the tooltip
     screen.getByRole('button').click();
-    await waitForElementToBeRemoved(() => screen.queryByText('tooltip'));
+    await waitFor(() =>
+      expect(instance.popper.querySelector('.tippy-box')).toHaveAttribute(
+        'data-state',
+        'hidden',
+      ),
+    );
   });
 
   test('props.className: single name is added to tooltip', () => {
